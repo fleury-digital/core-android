@@ -1,4 +1,4 @@
-package br.com.fleury.commons.utils
+package br.com.fleury.commons_android.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData

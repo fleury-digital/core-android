@@ -1,4 +1,4 @@
-package br.com.fleury.commons.di.modules
+package br.com.fleury.commons_android.di.modules
 
 import android.app.Application
 import android.content.SharedPreferences

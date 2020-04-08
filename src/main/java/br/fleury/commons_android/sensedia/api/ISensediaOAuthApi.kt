@@ -1,9 +1,9 @@
-package br.com.fleury.commons.sensedia.api
+package br.com.fleury.commons_android.sensedia.api
 
-import br.com.fleury.commons.sensedia.models.sensedia.oauth.AccessToken
-import br.com.fleury.commons.sensedia.models.sensedia.oauth.AccessTokenRequest
-import br.com.fleury.commons.sensedia.models.sensedia.oauth.GrantCode
-import br.com.fleury.commons.sensedia.models.sensedia.oauth.GrantCodeRequest
+import br.com.fleury.commons_android.sensedia.models.sensedia.oauth.AccessToken
+import br.com.fleury.commons_android.sensedia.models.sensedia.oauth.AccessTokenRequest
+import br.com.fleury.commons_android.sensedia.models.sensedia.oauth.GrantCode
+import br.com.fleury.commons_android.sensedia.models.sensedia.oauth.GrantCodeRequest
 import retrofit2.Call
 import retrofit2.http.*
 

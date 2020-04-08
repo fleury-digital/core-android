@@ -1,4 +1,4 @@
-package br.com.fleury.commons.utils
+package br.com.fleury.commons_android.utils
 
 import androidx.core.widget.NestedScrollView
 import timber.log.Timber

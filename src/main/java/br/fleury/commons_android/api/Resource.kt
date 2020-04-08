@@ -1,4 +1,4 @@
-package br.com.fleury.commons.api
+package br.com.fleury.commons_android.api
 
 /**
  * A generic class that holds a value with its loading status.

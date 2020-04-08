@@ -1,4 +1,4 @@
-package br.com.fleury.commons.base
+package br.com.fleury.commons_android.base
 
 import androidx.room.Delete
 import androidx.room.Insert

@@ -1,4 +1,4 @@
-package br.com.fleury.commons.api
+package br.com.fleury.commons_android.api
 
 import retrofit2.Response
 import timber.log.Timber

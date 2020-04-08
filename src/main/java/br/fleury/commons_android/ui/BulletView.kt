@@ -1,10 +1,10 @@
-package br.com.fleury.commons.ui
+package br.com.fleury.commons_android.ui
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.RelativeLayout
-import br.com.fleury.commons.R
+import br.com.fleury.commons_android.R
 
 
 class BulletView(context: Context?, attrs: AttributeSet?, defStyle: Int) :

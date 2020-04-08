@@ -1,11 +1,11 @@
-package br.com.fleury.commons.repository
+package br.com.fleury.commons_android.repository
 
 import androidx.annotation.MainThread
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import br.com.fleury.commons.api.ApiResponse
-import br.com.fleury.commons.api.Resource
+import br.com.fleury.commons_android.api.ApiResponse
+import br.com.fleury.commons_android.api.Resource
 
 abstract class NetworkBoundResource<ResultType, RequestType> @MainThread
 constructor() {

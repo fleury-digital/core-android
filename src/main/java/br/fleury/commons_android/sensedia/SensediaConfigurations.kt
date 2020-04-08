@@ -1,8 +1,8 @@
-package br.com.fleury.commons.sensedia
+package br.com.fleury.commons_android.sensedia
 
 import android.content.Context
-import br.com.fleury.commons.R
-import br.com.fleury.commons.sensedia.exceptions.InvalidConfigurationException
+import br.com.fleury.commons_android.R
+import br.com.fleury.commons_android.sensedia.exceptions.InvalidConfigurationException
 
 open class SensediaConfigurations(val context: Context) :
     ISensediaConfigurations {

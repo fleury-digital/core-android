@@ -1,4 +1,4 @@
-package br.com.fleury.commons.ui
+package br.com.fleury.commons_android.ui
 
 import android.content.Context
 import android.os.Handler
@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
-import br.com.fleury.commons.R
+import br.com.fleury.commons_android.R
 
 class LoadingIndicator : LinearLayout {
 

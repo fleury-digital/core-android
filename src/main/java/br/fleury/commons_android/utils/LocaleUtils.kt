@@ -1,4 +1,4 @@
-package br.com.fleury.commons.utils
+package br.com.fleury.commons_android.utils
 
 import java.util.*
 

@@ -1,4 +1,4 @@
-package br.com.fleury.commons.sensedia
+package br.com.fleury.commons_android.sensedia
 
 interface ISensediaConfigurations {
     var clientId: String

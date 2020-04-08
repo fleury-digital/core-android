@@ -1,9 +1,9 @@
-package br.com.fleury.commons.sensedia.api.interceptors
+package br.com.fleury.commons_android.sensedia.api.interceptors
 
-import br.com.fleury.commons.sensedia.ISensediaConfigurations
-import br.com.fleury.commons.sensedia.models.sensedia.oauth.AccessToken
-import br.com.fleury.commons.sensedia.models.sensedia.oauth.AccessTokenRequest
-import br.com.fleury.commons.sensedia.repository.contracts.ISensediaRepository
+import br.com.fleury.commons_android.sensedia.ISensediaConfigurations
+import br.com.fleury.commons_android.sensedia.models.sensedia.oauth.AccessToken
+import br.com.fleury.commons_android.sensedia.models.sensedia.oauth.AccessTokenRequest
+import br.com.fleury.commons_android.sensedia.repository.contracts.ISensediaRepository
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.google.gson.Gson
 import okhttp3.*

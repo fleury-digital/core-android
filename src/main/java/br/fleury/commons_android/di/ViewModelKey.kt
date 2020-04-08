@@ -1,4 +1,4 @@
-package br.com.fleury.commons.di
+package br.com.fleury.commons_android.di
 
 
 import androidx.lifecycle.ViewModel

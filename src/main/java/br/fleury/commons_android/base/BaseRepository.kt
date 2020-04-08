@@ -1,6 +1,6 @@
-package br.com.fleury.commons.base
+package br.com.fleury.commons_android.base
 
-import br.com.fleury.commons.utils.RateLimiter
+import br.com.fleury.commons_android.utils.RateLimiter
 import java.util.concurrent.TimeUnit
 
 abstract class BaseRepository(

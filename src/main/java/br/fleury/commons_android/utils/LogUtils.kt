@@ -1,7 +1,7 @@
-package br.com.fleury.commons.utils
+package br.com.fleury.commons_android.utils
 
 import android.util.Log
-import br.com.fleury.commons.BuildConfig
+import br.com.fleury.commons_android.BuildConfig
 import timber.log.Timber
 
 @Suppress("unused")

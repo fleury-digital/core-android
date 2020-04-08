@@ -1,6 +1,6 @@
-package br.com.fleury.commons.sensedia.repository.contracts
+package br.com.fleury.commons_android.sensedia.repository.contracts
 
-import br.com.fleury.commons.sensedia.models.sensedia.oauth.AccessToken
+import br.com.fleury.commons_android.sensedia.models.sensedia.oauth.AccessToken
 
 interface ISensediaRepository {
     var accessToken: AccessToken?

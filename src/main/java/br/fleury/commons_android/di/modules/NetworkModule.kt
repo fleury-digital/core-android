@@ -1,8 +1,8 @@
-package br.com.fleury.commons.di.modules
+package br.com.fleury.commons_android.di.modules
 
 import android.content.Context
 import android.os.Environment
-import br.com.fleury.commons.base.NetworkHelper
+import br.com.fleury.commons_android.base.NetworkHelper
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson

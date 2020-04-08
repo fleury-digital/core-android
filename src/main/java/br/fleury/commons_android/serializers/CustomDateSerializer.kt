@@ -1,4 +1,4 @@
-package br.com.fleury.commons.serializers
+package br.com.fleury.commons_android.serializers
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonPrimitive

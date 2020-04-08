@@ -1,4 +1,4 @@
-package br.com.fleury.commons.exceptions
+package br.com.fleury.commons_android.exceptions
 
 class ServerErrorException : Exception{
     constructor() : super()

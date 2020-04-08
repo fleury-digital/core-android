@@ -1,9 +1,9 @@
-package br.com.fleury.commons.ui
+package br.com.fleury.commons_android.ui
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.LinearLayout
-import br.com.fleury.commons.R
+import br.com.fleury.commons_android.R
 
 class NotFound : LinearLayout {
     constructor(context: Context) : super(context) {

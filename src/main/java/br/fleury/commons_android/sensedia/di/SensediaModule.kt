@@ -1,15 +1,15 @@
-package br.com.fleury.commons.sensedia.di
+package br.com.fleury.commons_android.sensedia.di
 
 import android.content.Context
 import android.os.Environment
-import br.com.fleury.commons.api.LiveDataCallAdapterFactory
-import br.com.fleury.commons.sensedia.ISensediaConfigurations
-import br.com.fleury.commons.sensedia.SensediaConfigurations
-import br.com.fleury.commons.sensedia.api.ISensediaOAuthApi
-import br.com.fleury.commons.sensedia.api.interceptors.SensediaAuthenticator
-import br.com.fleury.commons.sensedia.api.interceptors.SensediaTokenInterceptor
-import br.com.fleury.commons.sensedia.repository.SensediaRepository
-import br.com.fleury.commons.sensedia.repository.contracts.ISensediaRepository
+import br.com.fleury.commons_android.api.LiveDataCallAdapterFactory
+import br.com.fleury.commons_android.sensedia.ISensediaConfigurations
+import br.com.fleury.commons_android.sensedia.SensediaConfigurations
+import br.com.fleury.commons_android.sensedia.api.ISensediaOAuthApi
+import br.com.fleury.commons_android.sensedia.api.interceptors.SensediaAuthenticator
+import br.com.fleury.commons_android.sensedia.api.interceptors.SensediaTokenInterceptor
+import br.com.fleury.commons_android.sensedia.repository.SensediaRepository
+import br.com.fleury.commons_android.sensedia.repository.contracts.ISensediaRepository
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.google.gson.Gson
 import com.readystatesoftware.chuck.ChuckInterceptor

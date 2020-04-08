@@ -1,4 +1,4 @@
-package br.com.fleury.commons.sensedia.models.sensedia.oauth
+package br.com.fleury.commons_android.sensedia.models.sensedia.oauth
 
 import com.google.gson.annotations.SerializedName
 

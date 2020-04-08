@@ -1,4 +1,4 @@
-package br.com.fleury.commons.base
+package br.com.fleury.commons_android.base
 
 import androidx.room.ColumnInfo
 import org.joda.time.DateTimeComparator

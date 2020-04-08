@@ -1,3 +1,3 @@
-package br.com.fleury.commons.sensedia.exceptions
+package br.com.fleury.commons_android.sensedia.exceptions
 
 class SensediaAuthException : Exception()
