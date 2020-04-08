@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#ed0f69</color>
+  <color name="colorPrimaryDark">#ed0f69</color>
+  <color name="colorAccent">#D81B60</color>
+
+  <color name="success">#65C294</color>
+  <color name="warning">#FFD400</color>
+  <color name="error">#ca4a41</color>
+
+  <color name="loading_spinner_color">#ed0f69</color>
+  <color name="transparent">#00FFFFFF</color>
+  <color name="white05">#0DFFFFFF</color>
+  <color name="white10">#1AFFFFFF</color>
+  <color name="white15">#26FFFFFF</color>
+  <color name="white20">#33FFFFFF</color>
+  <color name="white25">#40FFFFFF</color>
+  <color name="white30">#4DFFFFFF</color>
+  <color name="white35">#59FFFFFF</color>
+  <color name="white40">#66FFFFFF</color>
+  <color name="white45">#73FFFFFF</color>
+  <color name="white50">#80FFFFFF</color>
+  <color name="white55">#8CFFFFFF</color>
+  <color name="white60">#99FFFFFF</color>
+  <color name="white65">#A6FFFFFF</color>
+  <color name="white70">#B3FFFFFF</color>
+  <color name="white75">#BFFFFFFF</color>
+  <color name="white80">#CCFFFFFF</color>
+  <color name="white85">#D9FFFFFF</color>
+  <color name="white90">#E6FFFFFF</color>
+  <color name="white95">#F2FFFFFF</color>
+  <color name="white">#FFFFFF</color>
+</resources>
