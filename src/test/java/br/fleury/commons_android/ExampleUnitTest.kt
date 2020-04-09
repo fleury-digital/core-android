@@ -1,4 +1,4 @@
-package br.fleury.commons_android
+package br.fleury.core
 
 import org.junit.Test
 
