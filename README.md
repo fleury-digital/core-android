@@ -2,7 +2,7 @@
 
 # Core Android
 
-> Biblioteca de core das aplicações
+> Biblioteca core das aplicações
 
 ## Requirements
 
@@ -14,6 +14,42 @@
 
 Você precisa instalar as seguintes dependências
 
+```groovy
+//build.gradle (project level)
+buildscript {
+    // ...
+    ext {
+      // ...
+        kotlin_version = '1.3.70'
+        dagger_version = '2.26'
+        retrofit_version = '2.7.2'
+        databinding_version = '3.6.1'
+        room_version = '2.2.5'
+        arch_version = '1.1.1'
+        gson_version = '2.8.6'
+        okhttp_version = '4.4.0'
+        lifecycle_version = '2.2.0'
+        daggermock_version = '0.8.4'
+        google_material_version = '1.1.0'
+        androidx_recyclerview = '1.1.0'
+        androidx_preference = '1.1.0'
+        androidx_legacy = '1.0.0'
+        androidx_fragment = '1.2.2'
+        androidx_core = '1.2.0'
+        androidx_constraintlayout = '1.1.3'
+        androidx_appcompat = '1.1.0'
+        timber_version = '4.7.1'
+        joda_version = '2.10.2'
+        stetho_version = '1.5.0'
+        lottie_version = '3.3.1'
+        itextpdf_version = '5.5.10'
+        chuck_http_inspector = '1.1.0'
+        leakcanary_version = '2.1'
+    }
+    // ...
+}
+```
+
 
 ## Instalation
 
@@ -23,7 +59,7 @@ buildscript {
     // ...
     ext {
       // ...
-      lib_version = '1.x.x'
+      core_lib_version = '1.x.x'
     }
     // ...
 }
@@ -32,7 +68,7 @@ buildscript {
 ```groovy
 //build.gradle (app level)
 
-implementation 'com.github.fleury-digital:core:$rootProject.ext.common_lib_version'
+implementation 'com.github.fleury-digital:core:$rootProject.ext.core_lib_version'
 ```
 
 ### Proguard rules
@@ -88,47 +124,34 @@ implementation 'com.github.fleury-digital:core:$rootProject.ext.common_lib_versi
 -keep class **$$Parcelable { *; }
 ```
 
-
-
 ## Configurations
 
-
-Em seu *Component*
+Em seu *di/modules*
 
 ```kotlin
-@Component(
-  modules = [
-    //...
-    ResultadosDeExamesModule::class
-  ]
+@Module(
+    includes = [
+        CoreModule::class,
+        SensediaModule::class,
+    ]
 )
-interface AppComponent {
-	//... 
-}
 ```
 
 ## Usage
 
-A maneira mais fácil de se utilizar é com o *autoFetch*, segue exemplo de implementação básica.
-
-Activity.kt
-
-```kotlin
-package exemplo
-
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-
-class Activity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-      super.onCreate(savedInstanceState)
-      setContentView(R.layout.activity)
-
-      val idPaciente = "6165961"
-      ListaFichasActivity.start(this, idPaciente)
-    }
-}
-```
+Essa biblioteca é utilizada em conjunto com as outras bibliotecas. 
+Essa lib já contém as seguintes bibliotecas:
+[https://github.com/google/dagger](dagger2)
+[https://github.com/square/okhttp](okhttp3)
+[https://github.com/square/retrofit](retrofit2)
+[https://github.com/airbnb/lottie-android](lottie)
+[https://github.com/facebook/stetho](stetho-okhttp)
+[https://github.com/jgilfelt/chuck](chuck)
+[https://github.com/JakeWharton/timber](timber) 
+[https://github.com/itext/itextpdf](itextpdf)
+[https://github.com/square/leakcanary](leakcanary)
+[https://github.com/JodaOrg/joda-time](joda)
+[https://github.com/google/gson](gson)
 
 _Para mais informaçoes de uso e exemplos, por favor entre em nossa [Wiki][wiki]._
 

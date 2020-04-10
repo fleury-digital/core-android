@@ -1,4 +1,4 @@
-package br.fleury.core
+package br.com.fleury.core
 
 import org.junit.Test
 

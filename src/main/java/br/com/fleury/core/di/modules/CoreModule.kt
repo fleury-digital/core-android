@@ -10,7 +10,7 @@ import javax.inject.Singleton
 @Module(
     includes = [NetworkModule::class]
 )
-class CommonsModule{
+class CoreModule{
 
     @Singleton
     @Provides

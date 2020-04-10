@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Commons</string>
+    <string name="app_name">Core</string>
     <string name="sensediaBaseUrl" />
     <string name="sensediaClientId" />
     <string name="sensediaCredentials" />
