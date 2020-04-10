@@ -139,19 +139,19 @@ Em seu *di/modules*
 
 ## Usage
 
-Essa biblioteca é utilizada em conjunto com as outras bibliotecas. 
-Essa lib já contém as seguintes bibliotecas:
-[https://github.com/google/dagger](dagger2)
-[https://github.com/square/okhttp](okhttp3)
-[https://github.com/square/retrofit](retrofit2)
-[https://github.com/airbnb/lottie-android](lottie)
-[https://github.com/facebook/stetho](stetho-okhttp)
-[https://github.com/jgilfelt/chuck](chuck)
-[https://github.com/JakeWharton/timber](timber) 
-[https://github.com/itext/itextpdf](itextpdf)
-[https://github.com/square/leakcanary](leakcanary)
-[https://github.com/JodaOrg/joda-time](joda)
-[https://github.com/google/gson](gson)
+Essa biblioteca é utilizada em conjunto com as outras bibliotecas. <br />
+Essa lib já contém as seguintes bibliotecas: <br /><br />
+[dagger2](https://github.com/google/dagger)<br />
+[okhttp3](https://github.com/square/okhttp)<br />
+[retrofit2](https://github.com/square/retrofit)<br />
+[lottie](https://github.com/airbnb/lottie-android)<br />
+[stetho-okhttp](https://github.com/facebook/stetho)<br />
+[chuck](https://github.com/jgilfelt/chuck)<br />
+[timber](https://github.com/JakeWharton/timber) <br />
+[itextpdf](https://github.com/itext/itextpdf)<br />
+[leakcanary](https://github.com/square/leakcanary)<br />
+[joda](https://github.com/JodaOrg/joda-time)<br />
+[gson](https://github.com/google/gson)<br /><br />
 
 _Para mais informaçoes de uso e exemplos, por favor entre em nossa [Wiki][wiki]._
 
