@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/fleury-digital/resultados-de-exames-android.svg)](https://jitpack.io/private#fleury-digital/core)
+[![](https://jitpack.io/v/fleury-digital/core-android).svg)](https://jitpack.io/private#fleury-digital/core-android)
 
 # Core Android
 
@@ -42,9 +42,7 @@ buildscript {
         joda_version = '2.10.2'
         stetho_version = '1.5.0'
         lottie_version = '3.3.1'
-        itextpdf_version = '5.5.10'
         chuck_http_inspector = '1.1.0'
-        leakcanary_version = '2.1'
     }
     // ...
 }
@@ -131,8 +129,7 @@ Em seu *di/modules*
 ```kotlin
 @Module(
     includes = [
-        CoreModule::class,
-        SensediaModule::class,
+        CoreModule::class
     ]
 )
 ```
@@ -148,8 +145,6 @@ Essa lib já contém as seguintes bibliotecas: <br /><br />
 [stetho-okhttp](https://github.com/facebook/stetho)<br />
 [chuck](https://github.com/jgilfelt/chuck)<br />
 [timber](https://github.com/JakeWharton/timber) <br />
-[itextpdf](https://github.com/itext/itextpdf)<br />
-[leakcanary](https://github.com/square/leakcanary)<br />
 [joda](https://github.com/JodaOrg/joda-time)<br />
 [gson](https://github.com/google/gson)<br /><br />
 

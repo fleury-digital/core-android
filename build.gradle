@@ -92,10 +92,8 @@ dependencies {
         implementation "joda-time:joda-time:$rootProject.ext.joda_version"
         implementation "com.facebook.stetho:stetho-okhttp3:$rootProject.ext.stetho_version"
         implementation "com.airbnb.android:lottie:$rootProject.ext.lottie_version"
-        api "com.itextpdf:itextg:$rootProject.ext.itextpdf_version"
 
         debugImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chuck_http_inspector"
         releaseImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chuck_http_inspector"
-        debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.ext.leakcanary_version"
     }
 }
