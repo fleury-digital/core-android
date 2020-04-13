@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Core</string>
-    <string name="sensediaBaseUrl" />
-    <string name="sensediaClientId" />
-    <string name="sensediaCredentials" />
-    <string name="invalidConfigurationException">Por favor, verifique se configurou corretamente a chave \'%s\' em seu strings.xml</string>
-</resources>
