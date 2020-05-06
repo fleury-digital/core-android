@@ -23,7 +23,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
@@ -95,5 +94,6 @@ dependencies {
 
         debugImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chuck_http_inspector"
         releaseImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chuck_http_inspector"
+        debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.ext.leakcanary_version"
     }
 }

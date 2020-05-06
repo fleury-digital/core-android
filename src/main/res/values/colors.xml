@@ -30,4 +30,42 @@
   <color name="white90">#E6FFFFFF</color>
   <color name="white95">#F2FFFFFF</color>
   <color name="white">#FFFFFF</color>
+
+  <!-- brand palette -->
+  <color name="green_0CA464">#0CA464</color>
+  <color name="green_00693D">#00693D</color>
+  <color name="green_004F2E">#004F2E</color>
+  <color name="green_029A59">#029A59</color>
+  <color name="green_098A9C">#098A9C</color>
+  <color name="green_076977">#076977</color>
+  <color name="green_18B3B3">#18B3B3</color>
+  <color name="green_03DAC5">#03DAC5</color>
+
+  <color name="white_FFFFFF">#FFFFFF</color>
+  <color name="white_F7F7F7">#F7F7F7</color>
+  <color name="white_CCCCCC">#CCCCCC</color>
+
+  <color name="gray_333333">#333333</color>
+  <color name="gray_77787B">#77787B</color>
+  <color name="gray_999999">#999999</color>
+
+  <color name="red_DA1E27">#DA1E27</color>
+  <color name="red_AF1E2C">#AF1E2C</color>
+  <color name="red_8B0E04">#8B0E04</color>
+
+  <color name="pink_ED0F69">#ED0F69</color>
+  <color name="pink_BA0850">#BA0850</color>
+
+  <color name="blue_1ea2d9">#1ea2d9</color>
+  <color name="blue_1961ac">#1961ac</color>
+  <color name="blue_005cb8">#005cb8</color>
+  <color name="blue_003366">#003366</color>
+  <color name="blue_1661AC">#1661AC</color>
+  <color name="blue_009FDE">#009FDE</color>
+  <color name="blue_007AAB">#007AAB</color>
+
+  <color name="purple_95569e">#95569e</color>
+
+  <color name="purple_654595">#654595</color>
+  <color name="purple_4D3471">#4D3471</color>
 </resources>
