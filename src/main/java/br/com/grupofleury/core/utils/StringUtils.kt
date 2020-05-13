@@ -1,6 +1,8 @@
 package br.com.grupofleury.core.utils
 
 import android.annotation.SuppressLint
+import android.util.Base64
+import java.nio.charset.StandardCharsets
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -54,3 +56,6 @@ fun String?.toDate(
         null
     }
 }
+
+fun String.encodeToBase64String(): String =
+    Base64.encodeToString(this.toByteArray(StandardCharsets.UTF_8), Base64.NO_WRAP) ?: ""
