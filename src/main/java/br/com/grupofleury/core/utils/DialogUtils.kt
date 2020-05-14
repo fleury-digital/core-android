@@ -18,9 +18,9 @@ fun BasicDialog(context: Context, title: String, msg: String) {
 //        Timber.d("You are not agree.")
 //    }
 //
-//    builder.setNeutralButton("Cancel"){_,_ ->
-//        Timber.d("You cancelled the dialog.")
-//    }
+    builder.setNeutralButton("Cancel"){_,_ ->
+        Timber.d("You cancelled the dialog.")
+    }
 
     val dialog: AlertDialog = builder.create()
     dialog.show()
