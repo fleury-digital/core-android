@@ -66,3 +66,23 @@ fun String.replaceSpecialChars(): String {
         .replace("/", "").replace(" ", "")
         .replace("*", "")
 }
+
+fun String.getHiddenPhoneWithDdd(ddd: String): String {
+    var hiddenPhone = "(${ddd}) "
+    for(i in 1..(this.length - 4)){
+        hiddenPhone += "X"
+    }
+    hiddenPhone +=  "-"
+    hiddenPhone += this.substring(this.length - 4, this.length)
+    return hiddenPhone
+}
+
+fun String.getHiddenEmail(): String {
+    val emailUser = substringBeforeLast("@")
+    var hiddenEmail = ""
+    for(i in 1..5){
+        hiddenEmail += "x"
+    }
+    hiddenEmail += this.substring((emailUser.length - 4), this.length)
+    return hiddenEmail
+}
