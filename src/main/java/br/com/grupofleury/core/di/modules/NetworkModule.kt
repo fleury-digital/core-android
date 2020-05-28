@@ -57,9 +57,4 @@ open class NetworkModule {
     @Singleton
     open fun provideNetworkHelper(context: Context): NetworkHelper = NetworkHelper(context)
 
-
-    @Provides
-    @Singleton
-    fun providesFirebaseFirestore(): FirebaseFirestore = FirebaseFirestore.getInstance()
-
 }
