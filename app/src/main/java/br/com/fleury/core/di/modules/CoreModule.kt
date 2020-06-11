@@ -1,8 +1,8 @@
 package br.com.grupofleury.core.di.modules
 
 import android.app.Application
-import android.content.SharedPreferences
-import androidx.preference.PreferenceManager
+import android.content.Context
+import br.com.grupofleury.core.utils.SharedPref
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -11,11 +11,7 @@ import javax.inject.Singleton
     includes = [NetworkModule::class]
 )
 class CoreModule{
-
     @Singleton
     @Provides
-    fun providePreferences(application: Application): SharedPreferences {
-        return PreferenceManager.getDefaultSharedPreferences(application)
-    }
-
+    fun providesSharedPref(context: Context): SharedPref = SharedPref(context)
 }

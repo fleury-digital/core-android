@@ -20,6 +20,9 @@ class ApiResponse<T> {
     val isNoContent: Boolean
         get() = code == 204
 
+    val isPreconditionFailed: Boolean
+        get() = code == 412
+
     val isClientError: Boolean
         get() = code in 400..499
 

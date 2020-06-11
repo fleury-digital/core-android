@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.widget.RelativeLayout
 import br.com.fleury.core.R
 
+
 class BulletView(context: Context?, attrs: AttributeSet?, defStyle: Int) :
     RelativeLayout(context, attrs, defStyle) {
     constructor(context: Context?) : this(context, null)

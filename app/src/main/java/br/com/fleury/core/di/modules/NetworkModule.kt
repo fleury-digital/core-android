@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Environment
 import br.com.grupofleury.core.base.NetworkHelper
 import com.facebook.stetho.okhttp3.StethoInterceptor
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -55,4 +56,5 @@ open class NetworkModule {
     @Provides
     @Singleton
     open fun provideNetworkHelper(context: Context): NetworkHelper = NetworkHelper(context)
+
 }
