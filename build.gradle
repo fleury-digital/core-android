@@ -1,103 +1,26 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+  ext.kotlin_version = "1.3.72"
+  repositories {
+    google()
+    jcenter()
+  }
+  dependencies {
+    classpath "com.android.tools.build:gradle:4.0.0"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
-
-    defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 1
-        versionName "0.0.1"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles 'consumer-rules.pro'
-    }
-
-    buildTypes {
-        debug {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
 }
 
-dependencies {
-    dependencies {
-        implementation fileTree(dir: 'libs', include: ['*.jar'])
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}
 
-        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.ext.kotlin_version"
-
-        implementation "androidx.appcompat:appcompat:$rootProject.ext.androidx_appcompat"
-        implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.androidx_constraintlayout"
-        implementation "androidx.core:core-ktx:$rootProject.ext.androidx_core"
-        implementation "androidx.fragment:fragment-ktx:$rootProject.ext.androidx_fragment"
-        implementation "androidx.legacy:legacy-support-v4:$rootProject.ext.androidx_legacy"
-
-        implementation "androidx.preference:preference-ktx:$rootProject.ext.androidx_preference"
-
-        implementation "androidx.recyclerview:recyclerview:$rootProject.ext.androidx_recyclerview"
-        implementation "com.google.android.material:material:$rootProject.ext.google_material_version"
-
-        implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.ext.lifecycle_version"
-        implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.ext.lifecycle_version"
-        implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.ext.lifecycle_version"
-        implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.ext.lifecycle_version"
-        implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.ext.lifecycle_version"
-
-        // data binding
-        kapt "com.android.databinding:compiler:$rootProject.ext.databinding_version"
-
-        //di
-        implementation "com.google.dagger:dagger-android:$rootProject.ext.dagger_version"
-        implementation "com.google.dagger:dagger-android-support:$rootProject.ext.dagger_version"
-        kapt "com.google.dagger:dagger-android-processor:$rootProject.ext.dagger_version"
-        kapt "com.google.dagger:dagger-compiler:$rootProject.ext.dagger_version"
-
-        //net
-        implementation "com.google.code.gson:gson:$rootProject.ext.gson_version"
-        implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp_version"
-        implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit_version"
-        implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit_version"
-        implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofit_version"
-
-        //Room
-        implementation "androidx.room:room-runtime:$rootProject.ext.room_version"
-        kapt "androidx.room:room-compiler:$rootProject.ext.room_version"
-        implementation "androidx.room:room-ktx:$rootProject.ext.room_version"
-        implementation "androidx.room:room-rxjava2:$rootProject.ext.room_version"
-
-        //arch-comp Room
-        implementation "android.arch.lifecycle:extensions:$rootProject.ext.arch_version"
-        implementation "android.arch.lifecycle:common-java8:$rootProject.ext.arch_version"
-        implementation "android.arch.persistence.room:runtime:$rootProject.ext.arch_version"
-        kapt "android.arch.persistence.room:compiler:$rootProject.ext.arch_version"
-
-        // tests
-        testImplementation 'junit:junit:4.12'
-        androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-        androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-        testImplementation "org.mockito:mockito-core:3.3.0"
-        testImplementation 'org.mockito:mockito-inline:2.27.0'
-        androidTestImplementation('com.squareup.okhttp3:mockwebserver:4.1.0') {
-            exclude group: "com.squareup.okhttp3"
-        }
-        implementation "com.github.fabioCollini.DaggerMock:daggermock-kotlin:$rootProject.ext.daggermock_version"
-
-        implementation "com.jakewharton.timber:timber:$rootProject.ext.timber_version"
-        implementation "joda-time:joda-time:$rootProject.ext.joda_version"
-        implementation "com.facebook.stetho:stetho-okhttp3:$rootProject.ext.stetho_version"
-        implementation "com.airbnb.android:lottie:$rootProject.ext.lottie_version"
-
-        debugImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chuck_http_inspector"
-        releaseImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chuck_http_inspector"
-    }
+task clean(type: Delete) {
+  delete rootProject.buildDir
 }

@@ -1,1 +1,2 @@
-include ':network-android'
+include ':app'
+rootProject.name = "core"
