@@ -1,4 +1,4 @@
-Core Android [![](https://jitpack.io/v/fleury-digital/core-android.svg)](https://jitpack.io/#fleury-digital/core-android)
+Core Android [![](https://jitpack.io/v/fleury-digital/core-android.svg)](https://jitpack.io/#fleury-digital/core-android) [![Build Status](https://app.bitrise.io/app/4cc96a0325722225/status.svg?token=dwvSHydeoEaj-oLKS5fXlA&branch=dev)](https://app.bitrise.io/app/4cc96a0325722225)
 ==
 Helpers for everyone 
 
