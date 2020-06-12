@@ -30,6 +30,19 @@ ref: https://jitpack.io/#fleury-digital/core-android
 Usage
 ==
 
+### Connectivity
+
+Connection verification:
+
+    ConnectivityHelper.on(context)
+
+### String
+
+Encode to Base64:
+
+    myString.encodeToBase64String()
+    
+### Date
 
 Changelog
 ==
