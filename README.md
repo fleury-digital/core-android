@@ -50,9 +50,9 @@ Questions regarding core-android can be asked on [issues](https://github.com/fle
 Developed By
 ==
 
-[Leandro Barral](https://github.com/leandrobarral)
-[Pierry Borges](https://github.com/pierry)
-[Ricardo Sousa](https://github.com/ricardorsdev)
+- [Leandro Barral](https://github.com/leandrobarral)
+- [Pierry Borges](https://github.com/pierry)
+- [Ricardo Sousa](https://github.com/ricardorsdev)
 
 License
 ==
