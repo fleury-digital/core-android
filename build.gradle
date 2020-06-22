@@ -35,6 +35,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //lib Fleury Core-Android
+    implementation 'com.github.fleury-digital:core-android:v1.0.0'
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.ext.kotlin_version"
 
     implementation "androidx.appcompat:appcompat:$rootProject.ext.androidx_appcompat"
