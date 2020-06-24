@@ -94,8 +94,8 @@ class ValidationUtils{
 
 
         fun validatePhone(phone: String) : Boolean {
-            return phone.isNotEmpty() && phone.replaceSpecialChars().matches(Regex("[0-9]+"))
-                && phone.replaceSpecialChars().length == PHONE_LENGTH
+            return phone.isNotEmpty() && phone.replaceSpecialChars().length == PHONE_LENGTH
+                && phone.replaceSpecialChars().isDigitsOnly()
         }
 
         const val CPF_LENGTH = 11
