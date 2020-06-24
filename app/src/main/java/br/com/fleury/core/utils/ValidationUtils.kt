@@ -1,6 +1,7 @@
 package br.com.grupofleury.core.utils
 
 import android.util.Patterns
+import androidx.core.text.isDigitsOnly
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -91,7 +92,14 @@ class ValidationUtils{
             return email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()
         }
 
+
+        fun validatePhone(phone: String) : Boolean {
+            return phone.isNotEmpty() && phone.replaceSpecialChars().matches(Regex("[0-9]+"))
+                && phone.replaceSpecialChars().length == PHONE_LENGTH
+        }
+
         const val CPF_LENGTH = 11
         const val DATE_LENGTH = 10
+        const val PHONE_LENGTH = 11
     }
 }
