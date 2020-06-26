@@ -23,6 +23,9 @@ Into your project level build.gradle:
 
     dependencies {
         implementation 'com.github.fleury-digital:core-android:v1.0.0'
+        implementation 'com.github.fleury-digital:core-androdid-helpers:v1.0.0'
+        implementation 'com.github.fleury-digital:core-android-network:v1.0.0'
+        implementation 'com.github.fleury-digital:core-android-ui:v1.0.0'
     }
     
 ref: https://jitpack.io/#fleury-digital/core-android
