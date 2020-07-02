@@ -92,14 +92,19 @@ class ValidationUtils{
             return email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()
         }
 
-
         fun validatePhone(phone: String) : Boolean {
             return phone.isNotEmpty() && phone.replaceSpecialChars().length == PHONE_LENGTH
                 && phone.replaceSpecialChars().isDigitsOnly()
         }
 
+        fun validateCep(cep: String) : Boolean {
+            return cep.isNotEmpty() && cep.replaceSpecialChars().length == CEP_LENGTH
+                && cep.replaceSpecialChars().isDigitsOnly()
+        }
+
         const val CPF_LENGTH = 11
         const val DATE_LENGTH = 10
         const val PHONE_LENGTH = 11
+        const val CEP_LENGTH = 8
     }
 }

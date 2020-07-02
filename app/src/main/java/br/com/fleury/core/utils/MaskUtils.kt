@@ -53,5 +53,6 @@ class MaskUtils {
         const val DATE_MASK = "##/##/####"
         const val CPF_MASK = "###.###.###-##"
         const val PHONE_MASK = "(##) #####-####"
+        const val CEP_MASK = "#####-###"
     }
 }
