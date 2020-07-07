@@ -3,6 +3,7 @@ package br.com.grupofleury.core.utils
 import android.content.Context
 import android.net.ConnectivityManager
 import android.util.Log
+import br.com.fleury.core.BuildConfig.*
 import timber.log.Timber
 import java.security.SecureRandom
 import javax.crypto.Cipher
@@ -45,9 +46,9 @@ object CryptographyHelper {
       val cipher: Cipher = Cipher.getInstance("AES/CBC/PKCS7Padding")
       cipher.init(Cipher.ENCRYPT_MODE, keySpec, ivSpec)
       val encrypted: ByteArray = cipher.doFinal(plainTextBytes)
-      map["salt"] = salt
-      map["iv"] = iv
-      map["encrypted"] = encrypted
+      map[SALT] = salt
+      map[IV] = iv
+      map[ENCRYPTED] = encrypted
     } catch (e: Exception) {
       Timber.e("encryption exception $e")
     }
@@ -60,9 +61,9 @@ object CryptographyHelper {
   ): ByteArray? {
     var decrypted: ByteArray? = null
     try {
-      val salt = map["salt"]
-      val iv = map["iv"]
-      val encrypted = map["encrypted"]
+      val salt = map[SALT]
+      val iv = map[IV]
+      val encrypted = map[ENCRYPTED]
 
       //regenerate key from password
       val passwordChar = passwordString.toCharArray()
