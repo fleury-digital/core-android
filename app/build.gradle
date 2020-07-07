@@ -16,7 +16,7 @@ android {
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     buildConfigField("String", "SHARED_PREFS", "\"SharedPrefsLibCore\"")
     buildConfigField("String", "ENCRYPTED", "\"encrypted\"")
-    buildConfigField("String", "IV", "\"IV\"")
+    buildConfigField("String", "IV", "\"iv\"")
     buildConfigField("String", "SALT", "\"salt\"")
     buildConfigField("String", "UserSuppliedPassword", "\"UserSuppliedPassword\"")
   }
